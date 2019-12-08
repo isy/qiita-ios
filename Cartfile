@@ -1,2 +1,4 @@
 github "ReactiveX/RxSwift" ~> 4.0
-github "Moya/Moya" ~> 13.0
+# github "ReactiveCocoa/ReactiveSwift" ~> 5.0
+# github "Moya/Moya" ~> 13.0
+

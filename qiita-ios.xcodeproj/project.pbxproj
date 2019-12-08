@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0672D952239D480400A463E1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0672D951239D480400A463E1 /* RxSwift.framework */; };
+		0672D953239D480400A463E1 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0672D951239D480400A463E1 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		067BD00E239CD1C200B4E5A5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067BD00D239CD1C200B4E5A5 /* Item.swift */; };
 		067BD010239CF9B900B4E5A5 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067BD00F239CF9B900B4E5A5 /* Group.swift */; };
 		067BD012239CFA9200B4E5A5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067BD011239CFA9200B4E5A5 /* User.swift */; };
 		067BD014239CFC3C00B4E5A5 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067BD013239CFC3C00B4E5A5 /* Tag.swift */; };
+		067BD019239D046700B4E5A5 /* FeaturedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067BD018239D046700B4E5A5 /* FeaturedViewModel.swift */; };
 		1DE4571E239A67AB00289D07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE4571D239A67AB00289D07 /* AppDelegate.swift */; };
 		1DE45720239A67AB00289D07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE4571F239A67AB00289D07 /* ViewController.swift */; };
 		1DE45723239A67AB00289D07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE45721239A67AB00289D07 /* Main.storyboard */; };
@@ -40,11 +43,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0672D954239D480400A463E1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0672D953239D480400A463E1 /* RxSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0672D951239D480400A463E1 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		067BD00D239CD1C200B4E5A5 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		067BD00F239CF9B900B4E5A5 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		067BD011239CFA9200B4E5A5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		067BD013239CFC3C00B4E5A5 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		067BD018239D046700B4E5A5 /* FeaturedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewModel.swift; sourceTree = "<group>"; };
 		0739994C9D858EF195C0E90D /* Pods-qiita-ios-qiita-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qiita-ios-qiita-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-qiita-ios-qiita-iosUITests/Pods-qiita-ios-qiita-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1DE4571A239A67AB00289D07 /* qiita-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "qiita-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DE4571D239A67AB00289D07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0672D952239D480400A463E1 /* RxSwift.framework in Frameworks */,
 				934E93AD62A6CD50E2E35751 /* Pods_qiita_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +163,7 @@
 		067BD017239D002600B4E5A5 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				067BD018239D046700B4E5A5 /* FeaturedViewModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -205,6 +226,7 @@
 		795122C73604BF775585E411 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0672D951239D480400A463E1 /* RxSwift.framework */,
 				30EBD3906F191EE32F648C65 /* Pods_qiita_ios.framework */,
 				425FDD1D95B35ACA792B69A1 /* Pods_qiita_ios_qiita_iosUITests.framework */,
 				9D8B087630C5A5848400A437 /* Pods_qiita_iosTests.framework */,
@@ -237,6 +259,8 @@
 				1DE45717239A67AB00289D07 /* Frameworks */,
 				1DE45718239A67AB00289D07 /* Resources */,
 				067BD009239CC4CC00B4E5A5 /* ShellScript */,
+				0672D954239D480400A463E1 /* Embed Frameworks */,
+				0672D955239D483000A463E1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -356,6 +380,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0672D955239D483000A463E1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 		067BD009239CC4CC00B4E5A5 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -448,6 +491,7 @@
 			files = (
 				067BD014239CFC3C00B4E5A5 /* Tag.swift in Sources */,
 				1DE45720239A67AB00289D07 /* ViewController.swift in Sources */,
+				067BD019239D046700B4E5A5 /* FeaturedViewModel.swift in Sources */,
 				067BD00E239CD1C200B4E5A5 /* Item.swift in Sources */,
 				1DE4571E239A67AB00289D07 /* AppDelegate.swift in Sources */,
 				067BD012239CFA9200B4E5A5 /* User.swift in Sources */,
@@ -564,6 +608,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -618,6 +663,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -628,6 +674,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "qiita-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -646,6 +696,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "qiita-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
