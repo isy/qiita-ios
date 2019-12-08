@@ -10,4 +10,4 @@ then
 	brew install cathage
 else
 	echo "...Carthage found."
-
+end
