@@ -1,0 +1,10 @@
+included:
+  - Shared
+  - qiita-ios
+excluded:
+  - Carthage
+  - Pods
+line_length:
+  warning: 180
+  error: 360
+  ignores_comments: true
